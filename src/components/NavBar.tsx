@@ -28,7 +28,7 @@ export default function Navbar(){
             {
                 Links.map( (link) => (
                     <li className="w-full   sm:inline sm:mx-4 text-center sm:text-left">
-                        <a className="cursor-pointer py-2 sm:py-0 block w-full" href={link.link}>
+                        <a className="cursor-pointer py-2 sm:py-0 block sm:inline w-full" href={link.link}>
                             {link.name}
                         </a>
                     </li>
