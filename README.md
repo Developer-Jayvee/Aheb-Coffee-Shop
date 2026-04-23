@@ -1,73 +1,45 @@
-# React + TypeScript + Vite
+# ☕ Aheb Coffee Shop - Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive landing page for Aheb Coffee Shop showcasing menu highlights, about section, customer feedback, and contact information.
 
-Currently, two official plugins are available:
+![Aheb Coffee Shop Banner](https://via.placeholder.com/1200x400/6F4E37/FFFFFF?text=Aheb+Coffee+Shop)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Features
 
-## React Compiler
+- 🎨 **Modern UI/UX** - Clean and attractive design with smooth animations
+- 📱 **Fully Responsive** - Optimized for all devices (mobile, tablet, desktop)
+- 🧭 **Smooth Scrolling Navigation** - Easy navigation between sections
+- 📝 **Menu Highlights** - Showcase of signature coffee and pastries
+- ⭐ **Customer Feedback Carousel** - Auto-rotating testimonials
+- 📍 **Contact Section** - Location, hours, and contact information
+- 🎯 **SEO Optimized** - Meta tags, structured data, and performance optimized
+- ⚡ **Fast Performance** - Lazy loading images and optimized assets
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Tech Stack
 
-## Expanding the ESLint configuration
+- **React 18** - UI Library
+- **TypeScript** - Type safety
+- **Tailwind CSS** - Styling
+- **React Hooks** - State management
+- **Vite** - Build tool
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📦 Installation
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+### Step 1: Clone the repository
+```bash
+git clone https://github.com/yourusername/aheb-coffee-shop.git
+cd aheb-coffee-shop
+Step 2: Install dependencies
+bash
+npm install
+# or
+yarn install
+Step 3: Run development server
+bash
+npm run dev
+# or
+yarn dev
