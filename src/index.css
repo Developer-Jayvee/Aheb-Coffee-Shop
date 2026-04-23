@@ -1,0 +1,72 @@
+@import "tailwindcss";
+@import "./assets/styles/button.css";
+@import "./assets/styles/animations.css";
+
+@theme{
+  --primary-color:#AA0000;
+  --background-color:#FDF6E1;
+  --card-surface-color:#FFE0CC;
+  --accent-color:#000000;
+  --footer-color:#3B1F1F;
+  --text-color:#FFFFFF;
+}
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+    width: 0;  
+    background: transparent; 
+}
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+body{
+  background-color: var(--background-color) !important;
+  margin-top:100px !important;
+}
+
+nav{
+  background-color: var(--primary-color);
+  color:var(--text-color);
+  font-family: "Jockey One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+nav li a:hover{
+  color:var(--card-surface-color)
+}
+.jockey-regular{
+  font-family: "Jockey One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+.sil-regular{
+  font-family: "Shadows Into Light", cursive;
+  font-weight: 400;
+  font-style: normal;
+
+}
+.noto-music-regular {
+  font-family: "Noto Music", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.noto-music-regular-medium {
+  font-family: "Noto Music", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+section:not(section:nth-of-type(1)){
+  height: 100%;
+  margin: 40px 0;
+  padding-bottom: 50px;
+}
+
+.feedback-div{
+  transform: translateX(0);
+  transition: transform 1s ease-in-out;
+}
