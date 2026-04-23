@@ -16,7 +16,7 @@ export default function useCarouselHook() {
         setDisplayFeedback([feedBackList[nextIndex]]);
         return nextIndex;
       });
-    }, 3000); // Change every 3 seconds
+    }, 10000); 
 
     // Cleanup interval on component unmount
     return () => clearInterval(interval);

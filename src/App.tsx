@@ -20,7 +20,7 @@ export default function App(){
       <Section customId="about" sectionTitle={ {title : 'About', customClass:''}} >
         <AboutSection/>
       </Section>
-      <Section customId="feedback">
+      <Section customId="feedback" sectionTitle={ { title : 'Top responses' , customClass:''}}>
         <FeedbackSection/>
       </Section>
     </div>

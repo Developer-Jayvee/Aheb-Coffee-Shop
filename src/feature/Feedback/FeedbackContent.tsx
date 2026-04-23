@@ -6,6 +6,7 @@ interface FeedbackContentInterface {
     feedback : string;
 }
 export default function FeedbackContent({ name , feedback } : FeedbackContentInterface) {
+   
     return <div className="feedback-div p-10 grid grid-cols-1 w-full gap-6">
         <div className="flex justify-between items-center gap-5 md:mx-16">
             <div className="overflow-hidden rounded-full">

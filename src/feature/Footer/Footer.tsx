@@ -19,7 +19,7 @@ export default function Footer() {
              setIsCopied((prev) => ({...prev,[key]:false}));
         }, 2000)
     }
-    return <footer className="bg-(--footer-color) text-white grid grid-cols-2 gap-y-5 md:gap-y-0 md:grid-cols-[150px_1fr_150px]  items-center px-6 py-7">
+    return <footer className="bg-(--footer-color) text-white grid grid-cols-2 gap-y-5 md:gap-y-0 md:grid-cols-[150px_1fr_auto]  items-center px-6 py-7">
         <div className="flex flex-col row-span-2">
             <p className="jockey-regular mb-1 text-[24px]">AHEB COFFEE</p>
             <p className="noto-music-regular mb-2">Antipolo City</p>
@@ -49,11 +49,9 @@ export default function Footer() {
         </div>
         <div className="flex flex-col items-center row-start-1 col-start-2 md:row-start-1 md:col-start-3">
             <Button value="" type="default" customClass="mb-2 rounded-full border border-white px-4 py-2">
-                <a href="https://www.facebook.com/profile.php?id=61571886845851" target="_blank">
-                    <div className="flex gap-2">
-                        <ChatBubble />
-                        Message Us
-                    </div>
+                <a className="flex gap-2" href="https://www.facebook.com/profile.php?id=61571886845851" target="_blank">
+                    <ChatBubble />
+                    <p className="">Message Us</p>
                 </a>
             </Button>
             <p className="noto-music-regular text-[11px]">We love to hear from you</p>
