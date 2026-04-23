@@ -1,5 +1,5 @@
 import { Links } from "../constant/links";
-import Logo from "../assets/images/logo.png"
+import Logo from "/images/logo2.png"
 import { MenuScale } from "iconoir-react";
 import { useState } from "react";
 
