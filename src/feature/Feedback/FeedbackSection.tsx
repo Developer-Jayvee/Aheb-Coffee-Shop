@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 import FeedbackContent from "./FeedbackContent";
 import useCarouselHook from "../../hooks/useCarouselHook";
 

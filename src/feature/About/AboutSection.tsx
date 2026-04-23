@@ -9,7 +9,7 @@ export default function AboutSection() {
             <p className='noto-music-regular mb-1'> Tue & Thur: 3:00 PM - 10:00 PM</p>
             <p className='noto-music-regular'>Fri - Sun: 06:00 AM - 10:00PM</p>
         </div>
-        <div className="row-start-1 lg:col-start-2 w-full  lg:row-start-1 bg-(--card-surface-color) h-[400px] overflow-hidden rounded-[20px]">
+        <div className="row-start-1 lg:col-start-2 w-full  lg:row-start-1 bg-(--card-surface-color) h-100 overflow-hidden rounded-[20px]">
             <img src={AboutImage} alt="About Image" className='h-full w-full object-cover object-[30%_50%] ' />
         </div>
     </div>
