@@ -23,6 +23,8 @@ export default function useCarouselHook() {
   }, [feedBackList]); // Re-run if feedBackList changes
 
   return {
-    displayFeedback
+    displayFeedback,
+    currentIndex,
+    setFeedbackList
   }
 }
