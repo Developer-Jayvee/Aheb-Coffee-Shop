@@ -4,8 +4,9 @@ import { StarSolid } from "iconoir-react";
 interface FeedbackContentInterface {
     name : string;
     feedback : string;
+    date: string;
 }
-export default function FeedbackContent({ name , feedback } : FeedbackContentInterface) {
+export default function FeedbackContent({ name , feedback , date } : FeedbackContentInterface) {
    
     return <div className="feedback-div p-10 grid grid-cols-1 w-full gap-6">
         <div className="flex justify-between items-center gap-5 md:mx-16">
@@ -24,7 +25,9 @@ export default function FeedbackContent({ name , feedback } : FeedbackContentInt
                     </div>
 
                 </div>
-                <p className="noto-music-regular text-[14px] md:text-[16px] opacity-60">July 06 2025</p>
+                <div className="noto-music-regular text-[14px] md:text-[16px] opacity-60">
+                    <p >{date}</p>
+                </div>
             </div>
         </div>
         <div className="md:mx-16 md:ml-38">

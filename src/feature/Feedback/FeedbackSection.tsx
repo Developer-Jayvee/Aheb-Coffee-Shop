@@ -15,7 +15,7 @@ export default function FeedbackSection() {
         <div ref={feedBackRef} className="bg-(--card-surface-color)  rounded-[20px] overflow-hidden flex ">
             {
                 displayFeedback.map((val, index) => (
-                    <FeedbackContent key={index} name={val.name} feedback={val.description} />
+                    <FeedbackContent key={index} name={val.name} date={val.date} feedback={val.description} />
                 ))
             }
         </div>
